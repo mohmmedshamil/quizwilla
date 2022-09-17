@@ -1,0 +1,61 @@
+.createquiz{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .createBtn{
+        display: flex;
+        justify-content: end;
+        margin-top: 2rem;
+        padding-right: 1rem;
+        Button{
+            border: 2px solid #7265ac;
+            background-color: #7265ac;
+            font-weight: 600;
+            color: white;
+            &:hover{
+                color: #7265ac;
+                background-color: white;
+                border: 2px solid #7265ac;
+            }
+        }
+    }
+
+}
+.modal-body{
+    padding: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    p{
+        color: red;
+        font-size: .8rem;
+        font-weight: 500;
+    }
+    .isSwitchOnDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 0rem;
+    }
+    .form-check-input:checked {
+        background-color: #2cfd0d;
+        border-color: #23d914;
+    }
+    label{
+        font-size: .8rem;
+        font-weight: 600;
+        &.form-check-label{
+            margin: .3rem 0px 0px .3rem;
+        }
+    }
+    .options{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .form-switch .form-check-input {
+        width: 3rem !important;
+        height: 2rem !important;
+    }
+}
